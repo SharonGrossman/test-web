@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import Github from './github.png';
-import Linkedin from './linkedin.png';
-import Medium from './medium.png';
-import Pic from './pic.png';
+import {Github} from './Github';
+import {Linkedin} from './Linkedin';
+import {Medium} from './Medium';
 
 const Container = styled.div`
   display: flex;
@@ -19,13 +18,7 @@ flex-direction: column;
   justify-content: center;
   align-items: center;
 `
-const Logo = styled.img`
 
-        margin: 25px;
-  width: 100px;
-        height: 100px;
-        border-radius: 25px;
-`;
 const RowContainer = styled.div`
         justify-content: center;
         align-items: center;
@@ -35,32 +28,32 @@ const RowContainer = styled.div`
   height: 100%;
 `;
 
-const ProfilePic = styled.img`
-  width: 150px;
-  height: 150px;
-  border-radius: 75px;
-  margin-bottom: 35px;
-`
-
 const Text = styled.span`
   font-family: 'Roboto', 'Rubik', sans-serif;
   font-size: 25px;
   color: white;
 `;
 
+const Name = styled.span`
+  font-family: 'Josefin Sans', sans-serif;  
+  font-size: 64px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 25px;
+`;
+
 export default () => (
     <Container>
         <RowContainer>
             <ColumnContainer>
-                <ProfilePic src={Pic}/>
-                <Text>{'Sharon Grossman'}</Text>
-                <Text>{'Senior Software Developer @ Fabric'}</Text>
+                <Name>{`Hello, I'm Sharon Grossman!`}</Name>
+                <Text>{'Senior Software Engineer | Open Source Enthusiast'}</Text>
+                <RowContainer>
+                    <a target="_blank" href={'https://github.com/sharongrossman'}><Github/></a>
+                    <a target="_blank" href={'https://sharongrossman.medium.com/'}><Medium/></a>
+                    <a target="_blank" href={'https://www.linkedin.com/in/sharon-grossman/'}><Linkedin/></a>
+                </RowContainer>
             </ColumnContainer>
-        </RowContainer>
-        <RowContainer>
-                        <a target="_blank" href={'https://github.com/sharongrossman'}><Logo src={Github}/></a>
-                        <a target="_blank" href={'https://sharongrossman.medium.com/'}><Logo src={Medium}/></a>
-                        <a target="_blank" href={'https://www.linkedin.com/in/sharon-grossman/'}><Logo src={Linkedin}/></a>
         </RowContainer>
     </Container>
 )
