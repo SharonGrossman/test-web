@@ -47,7 +47,7 @@ export default () => (
         <RowContainer>
             <ColumnContainer>
                 <Name>{`Hello, I'm Sharon Grossman!`}</Name>
-                <Text>{'Senior Software Engineer | Open Source Enthusiast | Blogger'}</Text>
+                <Text>{'Senior Software Engineer | Open Source Enthusiast'}</Text>
                 <RowContainer>
                     <a target="_blank" href={'https://github.com/sharongrossman'}><Github/></a>
                     <a target="_blank" href={'https://sharongrossman.medium.com/'}><Medium/></a>
