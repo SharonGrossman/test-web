@@ -26,6 +26,7 @@ const RowContainer = styled.div`
   flex-direction: row;
   width: 100%;
   height: 100%;
+  white-space: pre-wrap;
 `;
 
 const Text = styled.span`
@@ -47,7 +48,10 @@ export default () => (
         <RowContainer>
             <ColumnContainer>
                 <Name>{`Hello, I'm Sharon Grossman!`}</Name>
+                <RowContainer>
                 <Text>{'Senior Software Engineer | Open Source Enthusiast'}</Text>
+                <a target="_blank" href={'https://github.com/osskit'}><Text>{` | @osskit`}</Text></a>
+                </RowContainer>
                 <RowContainer>
                     <a target="_blank" href={'https://github.com/sharongrossman'}><Github/></a>
                     <a target="_blank" href={'https://sharongrossman.medium.com/'}><Medium/></a>

@@ -8,12 +8,16 @@ body {
 #root {
   height: 100vh;
   width: 100%;
-  background-color: rgb(161 194 232);
+  background-color: rgb(155, 190, 230);
+}
+
+a {
+  text-decoration: none;
 }
 
 svg {
-  width: 35px;
-  height: 35px;
-  color: #2d2d3d;
-  margin: 35px 15px 0 0;
+  width: 65px;
+  height: 65px;
+  color: #ffffff;
+  margin: 35px 35px 0 0;
 }
