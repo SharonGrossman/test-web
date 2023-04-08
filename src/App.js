@@ -56,6 +56,7 @@ font-size: 54px;
 const ProfilePic = styled.img`
   height: 30%;
   width: 30%;
+  border-radius: 50%;
   margin-bottom: 35px;
 `
 
